@@ -1,0 +1,516 @@
+# Copyright (C) 2026 Pragmatic Bear
+# This file is distributed under the same license as the LinkSentinel plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: LinkSentinel 5.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/linksentinel\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-11T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: LinkSentinel string extractor\n"
+"X-Domain: linksentinel\n"
+
+
+#: admin/class-link-sentinel-admin.php:51
+#: admin/partials/link-sentinel-admin-display.php:42
+msgid "Scan in progress"
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:52
+msgid "Scan complete"
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:65
+#: admin/class-link-sentinel-admin.php:66
+#: admin/partials/link-sentinel-admin-display.php:17
+msgid "LinkSentinel"
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:100
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:113
+#: admin/class-link-sentinel-admin.php:196
+#: admin/class-link-sentinel-admin.php:231
+#: admin/class-link-sentinel-admin.php:248
+#: admin/class-link-sentinel-ajax.php:26
+#: admin/class-link-sentinel-ajax.php:77
+#: admin/class-link-sentinel-ajax.php:156
+#: admin/class-link-sentinel-ajax.php:187
+#: admin/class-link-sentinel-ajax.php:263
+#: admin/class-link-sentinel-ajax.php:310
+#: admin/class-link-sentinel-ajax.php:446
+msgid "Permission denied."
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:118
+msgid "Invalid nonce."
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:274
+msgid "You do not have permission to access this export."
+msgstr ""
+
+#: admin/class-link-sentinel-admin.php:285
+msgid "Unable to open output stream for CSV export."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:32
+msgid "A scheduled scan is currently running. Please wait for it to finish."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:42
+msgid "No posts found to scan."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:63
+msgid "Starting scan of %d items..."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:87
+msgid "Too many requests. Please slow down."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:99
+msgid "Invalid scan token."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:103
+msgid "No active scan found."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:121
+msgid "Scan complete!"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:145
+msgid "Processed %d of %d items (%d%%)..."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:161
+msgid "No active scan."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:176
+msgid "Scanning... %d%%"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:192
+#: admin/class-link-sentinel-ajax.php:453
+msgid "Invalid ID."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:200
+#: admin/class-link-sentinel-ajax.php:471
+msgid "Record not found."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:204
+msgid "No final URL available to resolve."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:209
+#: admin/class-link-sentinel-ajax.php:476
+msgid "Post not found."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:222
+msgid "Manually resolved"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:230
+msgid "Link updated successfully."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:236
+#: admin/class-link-sentinel-ajax.php:505
+msgid "Link already removed from post"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:250
+#: admin/class-link-sentinel-ajax.php:520
+msgid "The link was already removed or changed in the post. The record has been resolved."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:292
+msgid "Table exists and is accessible."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:297
+msgid "Table missing. Try deactivating and reactivating the plugin."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:334
+msgid "All done! No more pending redirects."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:380
+msgid "Bulk resolved"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:396
+msgid "Link already updated or removed from post"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:436
+msgid "Resolved %d links (%d errors). %d remaining..."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:457
+msgid "Please provide a valid URL."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:463
+msgid "Only http and https URLs are allowed."
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:491
+msgid "Manually changed"
+msgstr ""
+
+#: admin/class-link-sentinel-ajax.php:499
+msgid "Link changed successfully."
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:44
+#: admin/class-link-sentinel-list-tables.php:159
+#: admin/class-link-sentinel-list-tables.php:283
+msgid "Original URL"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:45
+msgid "Corrected To"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:46
+msgid "Action Taken"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:47
+msgid "Resolved By"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:48
+msgid "Found In"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:49
+msgid "Date Corrected"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:81
+#: admin/class-link-sentinel-list-tables.php:176
+#: admin/class-link-sentinel-list-tables.php:300
+msgid "Post #%d"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:109
+msgid "No resolved items yet."
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:158
+#: admin/class-link-sentinel-list-tables.php:282
+msgid "Post"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:160
+msgid "Detected URL"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:161
+#: admin/class-link-sentinel-list-tables.php:285
+msgid "HTTP"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:162
+#: admin/class-link-sentinel-list-tables.php:286
+msgid "Note"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:163
+#: admin/class-link-sentinel-list-tables.php:287
+msgid "Date Scanned"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:196
+msgid "Nothing to review. Great job!"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:249
+msgid "Resolve Now"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:284
+msgid "Change Link"
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:320
+msgid "No broken links found."
+msgstr ""
+
+#: admin/class-link-sentinel-list-tables.php:342
+msgid "Change"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:24
+msgid "Manual"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:24
+msgid "Automatic"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:25
+msgid "Last scan:"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:31
+msgid "Manual Scan"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:32
+msgid "Run a manual scan of your internal links. Results appear below once processing completes."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:36
+msgid "Scan Now"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:59
+#: admin/partials/link-sentinel-admin-display.php:86
+msgid "Resolved Links"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:61
+msgid "Pending Redirects (%d)"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:63
+msgid "Broken Links (%d)"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:64
+#: admin/partials/link-sentinel-admin-display.php:172
+msgid "Settings"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:89
+msgid "Are you sure you want to clear all resolved links? This action cannot be undone."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:89
+#: admin/partials/link-sentinel-admin-display.php:124
+#: admin/partials/link-sentinel-admin-display.php:159
+msgid "Clear Table"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:91
+msgid "Download CSV"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:109
+msgid "Pending redirects cleared."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:113
+msgid "Pending Redirects"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:124
+msgid "Are you sure you want to clear all pending redirects? This cannot be undone."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:128
+msgid "Resolve All"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:146
+msgid "Broken links cleared."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:150
+msgid "Broken Links"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:159
+msgid "Are you sure you want to clear all broken links? This cannot be undone."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:175
+msgid "Settings updated."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:191
+msgid "Auto-resolve permanent redirects"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:194
+msgid "Automatically update links that return a 301 or 308 status when scanning."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:196
+msgid "When enabled, permanently redirected links will be updated without requiring manual review."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:203
+msgid "Resolve external redirects (slower)"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:207
+msgid "Follow and resolve external redirect chains (may be slower and can cause timeouts on some hosts)."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:209
+msgid "Enable this if you need to trace redirects that leave your domain. Leave it off to keep scans faster."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:216
+msgid "Post types to scan"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:230
+msgid "Select which post types should be included in scans. Defaults to posts and pages."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:237
+msgid "Automatic Scanning"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:241
+msgid "Enable automatic scheduled scans"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:243
+msgid "When enabled, scans will run automatically according to the schedule below."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:250
+msgid "Scan Frequency"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:255
+msgid "Daily"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:256
+msgid "Twice Daily"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:257
+msgid "Weekly"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:266
+msgid "How often automatic scans should run."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:272
+msgid "Scan Time"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:277
+msgid "What time of day scans should run (24-hour format). Default is 02:00 (2:00 AM)."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:286
+msgid "Next scheduled scan: %s"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:288
+msgid "Save settings to schedule the next scan."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:294
+msgid "Times are based on your site timezone: %s"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:301
+msgid "Scan Batch Size"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:307
+msgid "Number of posts to process in each batch during scans (5-100). Default is 25."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:314
+msgid "Resolve All batching"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:322
+msgid "Use custom batch size and cooldown for Resolve All"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:324
+msgid "When enabled, the values below override the default Resolve All pacing (useful for slow or rate-limited hosts)."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:328
+msgid "Links per batch"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:332
+msgid "Cooldown (seconds)"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:339
+msgid "Example: 50 links with a 120-second cooldown processes 50 redirects, pauses for 2 minutes, then continues automatically. Leave cooldown at 0 for back-to-back batches."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:347
+msgid "Clean uninstall"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:350
+msgid "Delete all plugin data (including scan history) when uninstalling."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:352
+msgid "When enabled, the link monitor table and all scan data will be permanently removed if you delete the plugin. Leave unchecked to preserve historical data."
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:360
+msgid "Save Settings"
+msgstr ""
+
+#: admin/partials/link-sentinel-admin-display.php:367
+msgid "Pragmatic Bear"
+msgstr ""
+
+#: includes/class-link-sentinel-activator.php:131
+msgid "Once Weekly"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:822
+msgid "External skipped"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:927
+msgid "Redirect loop detected"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:960
+msgid "Canonical"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:1214
+#: includes/class-link-sentinel-scanner.php:1223
+msgid "Auto-fixed (Permanent Redirect)"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:1239
+msgid "Permanent Redirect"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:1239
+msgid "Temporary Redirect"
+msgstr ""
+
+#: includes/class-link-sentinel-scanner.php:1258
+#: includes/class-link-sentinel-scanner.php:1267
+msgid "Auto-fixed (Canonicalized)"
+msgstr ""

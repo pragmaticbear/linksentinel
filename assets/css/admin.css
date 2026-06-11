@@ -1,0 +1,78 @@
+/*
+ * Admin styles for LinkSentinel.
+ *
+ * Keep custom styles scoped so they do not interfere with the core
+ * WordPress admin UI.  These are intentionally minimal; more complex
+ * styling should live in a build pipeline (e.g., compiled Sass/Tailwind).
+ */
+
+#rfx-scan-status .spinner {
+    margin-top: 0;
+}
+
+#rfx-scan-progress {
+    transition: width 0.3s ease;
+}
+
+/*
+ * Wrap long URLs and other code blocks in our plugin tables so they do not
+ * overflow or overlap other columns.  Use a scoped selector to avoid
+ * affecting core admin pages.  The `word-break: break-all` rule allows
+ * uninterrupted strings (e.g. URLs) to wrap mid-word; `overflow-wrap: anywhere`
+ * provides a fallback across modern browsers.
+ */
+.rfx-dashboard code,
+.tab-content code {
+    /* Allow code blocks (URLs) to wrap nicely within table cells without
+     * overlapping adjacent cells.  Break long strings mid-word and let
+     * browsers wrap as needed.  Display each code snippet as a block to
+     * ensure adequate vertical spacing and prevent text clipping.  The
+     * padding adds a little breathing room inside the cell.  
+     */
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    display: block;
+    padding: 2px 4px;
+}
+
+/*
+ * Prevent admin table layout from overlapping WordPress footer.
+ * Add sufficient bottom margin to the main wrap container and tab content
+ * to ensure the footer copyright line is always visible.
+ */
+.rfx-dashboard.wrap {
+    margin-bottom: 80px;
+    min-height: 400px;
+}
+
+.rfx-dashboard .tab-content {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    min-height: 300px;
+}
+
+/*
+ * Ensure WP_List_Table instances have proper spacing and don't overflow
+ * into the footer area. Add bottom margin to form containers.
+ */
+.rfx-dashboard .tab-content form {
+    margin-bottom: 50px;
+}
+
+/*
+ * Add extra spacing after tables to prevent footer overlap.
+ */
+.rfx-dashboard .tab-content .widefat {
+    margin-bottom: 30px;
+}
+
+/*
+ * Ensure proper clearfix and spacing for the dashboard.
+ */
+.rfx-dashboard::after,
+.rfx-dashboard .tab-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}

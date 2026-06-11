@@ -1,46 +1,58 @@
 # Contributing to LinkSentinel
 
-Thanks for your interest in contributing to LinkSentinel! This document explains how to get involved. By participating, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
+Thanks for your interest in improving LinkSentinel! Issues and pull requests are
+welcome. Please open an issue to discuss significant changes before submitting a
+large PR.
 
-## Ways to Contribute
+## Reporting bugs
 
-- Report bugs and request features by opening an issue
-- Improve documentation
-- Submit bug fixes and new features via pull requests
+When filing a bug, please include:
 
-## Reporting Issues
+- WordPress version, PHP version, and active theme.
+- Steps to reproduce, expected behavior, and actual behavior.
+- Any relevant errors from `wp-content/debug.log` (with `WP_DEBUG_LOG` enabled).
+- Whether the site is multisite, and whether the scan was manual or scheduled.
 
-Before opening a new issue, please search existing issues to avoid duplicates. When reporting a bug, include:
+Do **not** report security vulnerabilities in public issues — see
+[SECURITY.md](SECURITY.md).
 
-- A clear description of the problem
-- Steps to reproduce
-- Expected vs. actual behavior
-- Your environment (OS, version, relevant configuration)
+## Development setup
 
-## Development Setup
+LinkSentinel has no build step and no external runtime dependencies.
 
-1. Fork the repository and clone your fork.
-2. Create a branch for your change: `git checkout -b my-feature`.
-3. Install dependencies (update this section for the project's toolchain).
-4. Make your changes and add tests where appropriate.
-5. Run the test suite and linters before committing.
+1. Clone the repository into `wp-content/plugins/link-sentinel` of a local
+   WordPress install (5.8+, PHP 7.4+).
+2. Activate **LinkSentinel** from the Plugins screen.
+3. Enable `WP_DEBUG` and `WP_DEBUG_LOG` in `wp-config.php` while developing.
 
-## Pull Request Process
+## Coding standards
 
-1. Keep pull requests focused on a single change.
-2. Write a clear description of what the change does and why.
-3. Reference any related issues (for example, `Closes #123`).
-4. Ensure CI checks pass and your branch is up to date with `main`.
-5. A maintainer will review your PR and may request changes.
+This plugin follows the
+[WordPress Coding Standards](https://developer.wordpress.org/coding-standards/).
+Please keep contributions consistent with the surrounding code:
 
-## Commit Messages
+- Escape all output (`esc_html`, `esc_attr`, `esc_url`, …) and sanitize all input.
+- Use `$wpdb->prepare()` for every query that includes variables.
+- Verify a nonce and a capability (`current_user_can`) in every form/AJAX handler.
+- Wrap all user-facing strings in i18n functions with the `link-sentinel` text
+  domain, e.g. `__( 'Text', 'link-sentinel' )`.
 
-Write clear, descriptive commit messages. A short summary line followed by an optional body explaining the motivation is recommended.
+If you add or change user-facing strings, regenerate the translation template:
 
-## Code Style
+```sh
+wp i18n make-pot . languages/link-sentinel.pot --domain=link-sentinel
+```
 
-Follow the existing code style of the project and any linter/formatter configuration included in the repository.
+## Pull requests
+
+- Branch from the default branch and keep PRs focused on a single concern.
+- Describe what changed and why; link the related issue.
+- Bump the version consistently in `link-sentinel.php` (`Version` header and
+  `RFX_VERSION`) and `readme.txt` (`Stable tag`) when a release is warranted, and
+  add a matching `== Changelog ==` entry.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
+By contributing, you agree that your contributions are licensed under the
+[GNU General Public License v2.0 or later](LICENSE), the same license as the
+project.
